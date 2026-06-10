@@ -40,12 +40,6 @@ export const configurableSchemas: ConfigurableSchemas = {
       label: "App Name",
     },
     {
-      fieldName: "tagline",
-      type: "string",
-      required: false,
-      label: "Tagline",
-    },
-    {
       fieldName: "logoUrl",
       type: "url",
       required: true,
@@ -76,43 +70,6 @@ export const configurableSchemas: ConfigurableSchemas = {
           label: "Accent",
         },
       ],
-    },
-    {
-      fieldName: "heroHeading",
-      type: "string",
-      required: false,
-      label: "Hero Heading",
-    },
-    {
-      fieldName: "heroSubheading",
-      type: "string",
-      required: false,
-      label: "Hero Subheading",
-    },
-    {
-      fieldName: "ctaLabel",
-      type: "string",
-      required: false,
-      label: "CTA Button Label",
-    },
-    {
-      fieldName: "features",
-      type: "array",
-      label: "Feature Highlights",
-      item: {
-        type: "object",
-        fields: [
-          { fieldName: "icon", type: "string", required: false, label: "Icon Name" },
-          { fieldName: "title", type: "string", required: true, label: "Title" },
-          { fieldName: "description", type: "string", required: false, label: "Description" },
-        ],
-      },
-    },
-    {
-      fieldName: "footerText",
-      type: "string",
-      required: false,
-      label: "Footer Text",
     },
   ],
 };

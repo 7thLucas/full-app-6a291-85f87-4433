@@ -1,0 +1,96 @@
+<style>
+  .mode-landscape .sl-split   { flex-direction: row; }
+  .mode-portrait  .sl-split   { flex-direction: column; }
+  .mode-landscape .sl-problem { width: 48%; height: 100%; }
+  .mode-landscape .sl-solution{ width: 52%; height: 100%; }
+  .mode-portrait  .sl-problem { width: 100%; height: 50%; }
+  .mode-portrait  .sl-solution{ width: 100%; height: 50%; }
+</style>
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="sl-split w-full h-full flex">
+
+    <!-- Left: The Problem (dark) -->
+    <div class="sl-problem flex flex-col p-10" style="background:#1a2e2b;">
+      <!-- Label chip -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full self-start mb-6" style="background:rgba(74,158,138,0.18); border:1px solid rgba(74,158,138,0.35);">
+        <div class="w-1.5 h-1.5 rounded-full" style="background:#4a9e8a;"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#4a9e8a;">The Problem</span>
+      </div>
+
+      <!-- Headline -->
+      <h2 class="font-bold mb-7" style="font-size:1.5rem; color:#ffffff; line-height:1.25; letter-spacing:-0.02em;">
+        Most spaces are<br>set up by accident.
+      </h2>
+
+      <!-- Pain points -->
+      <div class="flex flex-col gap-5">
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:rgba(240,160,75,0.15); border:1px solid rgba(240,160,75,0.35);">
+            <span style="color:#f0a04b; font-size:11px; font-weight:800;">1</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#9abfba;">Home offices and living rooms configured by habit, not intention — causing physical strain and unfocused days.</p>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:rgba(240,160,75,0.15); border:1px solid rgba(240,160,75,0.35);">
+            <span style="color:#f0a04b; font-size:11px; font-weight:800;">2</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#9abfba;">Design help is expensive to hire and overwhelming to find online — with no clear path to a real action.</p>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:rgba(240,160,75,0.15); border:1px solid rgba(240,160,75,0.35);">
+            <span style="color:#f0a04b; font-size:11px; font-weight:800;">3</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#9abfba;">The practical changes that actually matter are buried under noise, mood boards, and aesthetic inspiration you'll never use.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: The Solution (light) -->
+    <div class="sl-solution flex flex-col p-10 relative overflow-hidden" style="background:#f2faf8;">
+      <!-- Subtle background image -->
+      <div class="absolute inset-0 overflow-hidden" style="opacity:0.08;">
+        <img
+          src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=organized%20ergonomic%20home%20office%20desk%20plants%20natural%20light%20minimal%20clean%20warm"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="relative flex flex-col h-full" style="z-index:1;">
+        <!-- Label chip -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full self-start mb-6" style="background:#ddf0eb; border:1px solid #a8d9cf;">
+          <div class="w-1.5 h-1.5 rounded-full" style="background:#2d6b5e;"></div>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#2d6b5e;">The Solution</span>
+        </div>
+
+        <!-- Headline -->
+        <h2 class="font-bold mb-7" style="font-size:1.5rem; color:#1a2e2b; line-height:1.25; letter-spacing:-0.02em;">
+          Clear actions.<br>Real results.<br>In minutes.
+        </h2>
+
+        <!-- Solution points -->
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:#4a9e8a;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:#3d5450;">HomeWise assesses your actual space and delivers a ranked action list in under 5 minutes — no expertise needed.</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:#4a9e8a;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:#3d5450;">Every tip is specific and achievable — ranging from free rearrangements to affordable low-cost buys. No aspirational fluff.</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style="background:#4a9e8a;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-sm leading-relaxed" style="color:#3d5450;">Start free, see results immediately — the biggest wins often cost nothing at all.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

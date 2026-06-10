@@ -20,7 +20,7 @@ export async function action({ request }: ActionFunctionArgs) {
       email: String(formData.get("email") ?? ""),
       password: String(formData.get("password") ?? ""),
     });
-    const token = signJwt({ sub: user.id, role: user.role, username: user.username, email: user.email });
+    const token = signJwt({ sub: user.id, role: user.role, username: user.username, email: user.email, email_verified: user.email_verified ?? false });
     return redirect("/dashboard", { headers: { "Set-Cookie": buildAuthCookie(token, new URL(request.url).hostname) } });
   } catch (error: any) {
     return { error: error.message ?? "Invalid credentials" };

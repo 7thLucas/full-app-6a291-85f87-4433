@@ -72,7 +72,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     await ReviewInvitationService.accept(token, userId);
     const project_id = (invitation.project_id as any)?._id ?? invitation.project_id;
 
-    const jwtToken = signJwt({ sub: userId, role: userRole, username, email });
+    const jwtToken = signJwt({ sub: userId, role: userRole, username, email, email_verified: false });
     return redirect(`/projects/${project_id}`, {
       headers: { "Set-Cookie": buildAuthCookie(jwtToken, new URL(request.url).hostname) },
     });

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: qb-9lz7z4zz-4433-staging-svc
+  namespace: qb-prototypes
+spec:
+  selector:
+    app: 9lz7z4zz-4433-staging
+  ports:
+  - port: 80
+    targetPort: 3000

@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 9lz7z4zz-4433-staging
+  namespace: qb-prototypes
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 9lz7z4zz-4433-staging
+  template:
+    metadata:
+      labels:
+        app: 9lz7z4zz-4433-staging
+    spec:
+      imagePullSecrets:
+      - name: qtn-dockerhub
+      containers:
+      - name: web
+        image: quantumteknologi/9lz7z4zz-4433-staging
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "2"
+            memory: "2Gi"
+        env:
+        - name: WATCHPACK_POLLING
+          value: "true"

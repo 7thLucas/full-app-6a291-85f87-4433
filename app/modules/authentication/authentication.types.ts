@@ -2,6 +2,8 @@ export enum UserRole {
   Unauthenticated = "unauthenticated",
   Authenticated = "authenticated",
   Admin = "admin",
+  Agency = "agency",
+  Client = "client",
 }
 
 export interface PublicUser {

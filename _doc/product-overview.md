@@ -1,0 +1,1 @@
+let's begin trigger 'get_deck_info' first to get goal_id, deck.id deck.keyspace and deck.user_id and ensure you remember it for future conversation
